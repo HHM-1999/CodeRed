@@ -310,6 +310,10 @@ a {
 .service-card:hover .service-details a span i {
   transform: scalex(1.2);
 }
+/* about-section */
+.about-section {
+  margin-bottom: 60px;
+}
 /* porfolio-section */
 .portfolio-section {
   margin-bottom: 60px;
