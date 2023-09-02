@@ -86,7 +86,8 @@ a {
 }
 
 .social-links {
-  font-size: 14px;
+	font-size: 14px;
+	line-height: 22px;
 }
 
 .social-links .round-btn a {
@@ -162,8 +163,8 @@ a {
   color: #fff;
 }
 
-.sticky-nav {
-  position: sticky;
+.sticky {
+  position:fixed;
   top: 0px;
   width: 100%;
   z-index: 9999;
@@ -262,6 +263,27 @@ a {
 .hero-btn:hover {
   background-color: #000;
 }
+/*  counter */
+.counter-section {
+  margin-bottom: 60px;
+}
+.count {
+	background: #ccc;
+	padding: 50px 0;
+}
+
+.count .counter-box h5 {
+	font-size: 40px;
+	color: #2d2f40;
+	font-weight: 600;
+	padding-bottom: 15px;
+}
+.count .counter-box p{
+  font-size: 16px;
+	color: #333;
+	font-weight: 500;
+
+}
 /* service-section */
 .service-section {
   margin-bottom: 60px;
@@ -314,6 +336,65 @@ a {
 .about-section {
   margin-bottom: 60px;
 }
+.about-area{
+margin-top: 20px;
+}
+.about-area h2{
+  font-size: 27px;
+  line-height: 37px;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.about-area h2 span{
+  color: #7c0a02;
+  font-weight: 600;
+}
+.about-area p{
+  font-size: 14px;
+  color: #333;
+  line-height: 20px;
+  margin-bottom: 10px;
+  text-align: justify;
+  margin-right: 90px;
+
+}
+.area-img{
+  overflow: hidden;
+}
+.area-img img {
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+.area-img img:hover {
+  transform: scale(1.1);
+  opacity: 0.75;
+}
+
+/* technologies-section */
+.technologies-section{
+  margin-bottom: 60px;
+}
+.tech-details{
+  box-shadow: 0 0 0px 0 #00000051;
+  margin-bottom: 24px;
+  padding: 30px 0;
+ text-align: center;
+ background-color: #eee;
+}
+.tech-icon img{
+  overflow-x: hidden;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  transform: scale(1);
+  transition: all 0.5s ease;
+
+}
+
+.tech-icon img:hover {
+  transform: scale(1.1);
+}
 /* porfolio-section */
 .portfolio-section {
   margin-bottom: 60px;
@@ -330,7 +411,183 @@ a {
   transform: scale(1.1);
   opacity: 0.75;
 }
+/* team-section */
+.team-section{
+  margin-bottom: 60px;
+}
+.post-body {
+  position: relative;
+}
 
+.post-details {
+	background-color: #ae1e1a;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	padding: 15px;
+	width: 70%;
+	transform: translate(-50%,-50%);
+  transition: all 0.5s ease;
+  overflow: hidden;
+  text-align: center;
+
+}
+
+.post-details p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1.5px;
+  color: #eee;
+  margin-bottom: 10px;
+}
+
+
+.post-details h5 {
+  font-size: 17px;
+  font-weight: 22px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.post-links{
+  position: absolute;
+	top: 20%;
+	left: 80%;
+	border-radius: 0;
+	width: 0;
+	transform: translateY(-50%);
+	z-index:1;
+  display: none; 
+}
+.post-links a i {
+	font-size: 15px;
+	color:#fff ;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 50%;
+  background-color:#0072b1 ;
+}
+ .post-body:hover  .post-links {
+  display: block;
+  right: 20px;
+ 
+}
+.post-links a{
+ border-radius: 0;
+ text-align: center;
+}
+/* testimonial-section */
+.testimonial-section{
+  margin-top: 120px;
+}
+.user-profile {
+  margin-bottom: 20px;
+}
+
+.user-profile .user-img img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.user-details {
+  padding: 0px 10px;
+}
+.user-details h2 {
+	font-size: 16px;
+	font-size: 700;
+	line-height: 22px;
+	letter-spacing: -0.3px;
+  color: #ae1e1a;
+}
+.test-para p {
+	font-size: 11px;
+	color: #333;
+	margin: 10px 0px;
+
+}
+.test-para p{
+
+    font-size: 12px;
+    /* margin-right: 26px; */
+    color: #555;
+    margin: 10px 0px;
+
+}
+.testimonial {
+  padding: 20px 20px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #eee;
+  box-shadow: 0 0 0px 0 #00000051;
+}
+/* policy section */
+.policy-section {
+  margin-top: 60px;
+  background-color: #ead5ce;
+}
+
+.policy-img img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.policy-body {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.policy-body p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #555;
+}
+
+.policy-body h5 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: -0.3px;
+}
+
+.policy-body a span {
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #000;
+  text-decoration: underline;
+}
+
+.policy-area:hover .policy-body a span {
+  color: #f3612e;
+}
+.policy-btn {
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background-color: #b22222;
+  border: 0;
+  
+}
+
+.policy-btn:hover {
+  background-color: #000;
+}
+.policy-img{
+  padding-top: 30px;
+}
 /* footer */
 
 .footer-area {

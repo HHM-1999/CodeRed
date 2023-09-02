@@ -11,11 +11,23 @@ function toggleStickyNavbar() {
 }
 window.addEventListener('scroll', toggleStickyNavbar);
 
-//slider
-$('.fade').slick({
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear'
+
+//counter//
+let valueDisplay = document.querySelectorAll(".number");
+let interval = 1000;
+
+
+console.log(valueDisplay);
+
+valueDisplay.forEach((valueDisplay) => {
+    let startval = 0;
+    let endval = parseInt(valueDisplay.getAttribute("data-val"));
+    let timing = Math.floor(interval / endval);
+    let counter = setInterval(() => {
+        startval = startval + 1;
+        valueDisplay.textContent = startval;
+        if (startval == endval) {
+            clearInterval(counter);
+        }
+    }, timing);
 });
