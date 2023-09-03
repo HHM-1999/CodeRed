@@ -135,7 +135,7 @@
                                                 <i class="fa-solid fa-magnifying-glass search-button"></i></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link " aria-disabled="true">
+                                            <a href="/Contact" class="nav-link " aria-disabled="true">
                                                 <i class="fa-solid fa-braille"></i></a>
                                         </li>
 
@@ -148,15 +148,39 @@
             </div>
         </div>
         <!-- main-header-end -->
+                <!-- top-search-box -->
+                <div id="searchcontainer" class="hidden">
+                    <div id="search" class="search_block" style="display: block;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form id="cse-search-box" action="/keywordsearch" method="get">
+                                        <div class="search_logo display-flex">
+                                            <input type="hidden" name="cx" value="ea09f3fc43677ad37">
+                                            <input type="hidden" name="cof" value="FORID:10">
+                                            <input type="hidden" name="ie" value="UTF-8">
+                                            <input name="search" class="search-bar" placeholder="Search..." title="Search"
+                                                type="search">
+                                            <button onclick="performSearch()"><i class="fa fa-search"></i></button>
+                                            <a onclick="hideSearchBox()" class="close-search" href="/"><i
+                                                    class="fa fa-times"></i></a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
     </header>
     <!-- header-end -->
     <main>
         <!-- hero-section-start -->
         <section class="hero-section">
             <div class="hero-area">
-                <div id="carouselExample" class="carousel slide">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item active" data-bs-interval="10000">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-6">
@@ -178,7 +202,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" data-bs-interval="2000">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-6">
@@ -199,7 +223,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" data-bs-interval="2000">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-6">
@@ -221,16 +245,14 @@
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="next">
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
-                    </button>
+                      </button>
                 </div>
             </div>
         </section>
@@ -667,7 +689,7 @@
                                     </div>
                                     <div class="post-links">
                                         <div class="post-cart-links ">
-                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                            <a href="/Kartik Aryan"><i class="fa-brands fa-linkedin-in"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -686,7 +708,7 @@
                                     </div>
                                     <div class="post-links">
                                         <div class="post-cart-links ">
-                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                            <a href="/Mili Javen"><i class="fa-brands fa-linkedin-in"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -703,7 +725,7 @@
                                     </div>
                                     <div class="post-links">
                                         <div class="post-cart-links ">
-                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                            <a href="/Samima Tagore"><i class="fa-brands fa-linkedin-in"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -721,7 +743,7 @@
                                     </div>
                                     <div class="post-links">
                                         <div class="post-cart-links ">
-                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                            <a href="/Kriti Sanono"><i class="fa-brands fa-linkedin-in"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -848,15 +870,282 @@
             </div>
         </section>
         <!-- ad-section-end -->
+        <!-- Contact-section-start -->
+        <section class="contact-section">
+             <!-- contact -->
+    <section class="contact">
+        <div class="container">
+            <div class="section-heading">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#">
+                            <h6>Contact</h6>
+                        </a>
+                        <a href="#">
+                            <h2>Need Help?! Contact Us</h2>
+                        </a>
+                        <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Veritatis reiciendis
+                            pariatur alias obcaecati repudiandae optio beatae <br>
+                            voluptate molestiae sunt
+                            praesentium.</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-map">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.6904823062214!2d90.38756477440911!3d23.794033787101526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7ec0f54e6f3%3A0xd1da291c076989af!2sUttar%20kafrul!5e0!3m2!1sbn!2sbd!4v1691296563066!5m2!1sbn!2sbd"
+                            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-area">
+                <div class="row">
+                    <div class="col-lg-6 contact-padding">
+                        <div class="contact-area-details">
+                            <div class="d-flex">
+                                <i class="fa-solid fa-location-dot "></i>
+                                <h3>Our Address</h3>
+                            </div>
+                            <h4>AL45, Adom Street New York, NY506699-US</h4>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-area-details">
+                            <div class="d-flex">
+                                <i class="fa-solid fa-envelope"></i>
+                                <h3>Email Us</h3>
+                            </div>
+                            <h4>ABC@gmail.com</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 contact-padding">
+                        <div class="contact-area-details">
+                            <div class="d-flex">
+                                <i class="fa-solid fa-phone"></i>
+                                <h3>Our Phone Number</h3>
+                            </div>
+                            <h4>+80112110425421</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-area-details">
+                            <div class="d-flex">
+                                <i class="fa-solid fa-clock"></i>
+                                <h3>Opening Hours</h3>
+                            </div>
+                            <h4>Mon-Sat: 11am-7pm , Sun: Closed</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-details">
+            <div class="row">
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                         
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Message</label>
+                          <input type="text" class="form-control" id="exampleInputPassword1">
+                        </div>
+                      
+                      </form>
+                </div>
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                         
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    
+                       
+                      </form>
+                </div>
+              <div class="contact-button">
+                <a href="#"><button class="policy-btn">Send a Message <i class="fa-solid fa-arrow-right"></i></button></a>
+              </div>
+                
+            </div>
+                <!-- <div class="row">
+                    <div class="col-lg-6 ">
+                        <div class="details-area">
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ">
+                        <div class="details-area">
+                            <input type="text" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ">
+                        <div class="details-area">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="message-area">
+                        <input type="text" placeholder="Message">
+                    </div>
+                </div> -->
+               
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+        </section>
+         <!-- Contact-section-end -->
 
 
 
     </main>
+    <!-- footer start -->
+    <footer>
+        <div class="footer-section">
+            <div class="container">
+                <div class="footer-area">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <div class="footer-info  ">
+                                <div class="footer-info-border">
+                             
+                                        <a href="#">
+                                            <h3>Code<span>Red</span>
+                                            </h3>
+                                        </a>
+                                  
+                                    <!-- <li></li>
+                                    <li class="social-links">
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                                    </li> -->
+                                    <!-- <li><a href="#"><i class="fa-regular fa-registered"></i>Regions</a></li>
+                                                <li><a href="#"><i class="fa-solid fa-location-dot"></i> Places Of Interest</a></li> -->
+                                </div>
+                              
+                            </div>
+                            <div class="footer-info-details">
+                                <a href="#">
+                                    <p>Lorem ipsum dolor sit,amet consectetur adipisicing elit.</p>
+                                </a>
+                            </div>
+                          
+                          <div class="footer-social-links">
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                            </div> 
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="footer-info">
+                                <ul class="footer-info-border">
+                                    <li><a href="#" >
+                                            <h4>SERVICES</h4>
+                                        </a></li>
+                                    <li><a href="#" class="shop-link">
+                                            Web Application
+                                        </a></li>
+                                    <li><a href="#" class="shop-link">
+                                         App Development
+                                        </a></li>
+                                    <li><a href="#" class="shop-link">
+                                        Cloud Solution
+                                        </a></li>
+                                    <li><a href="#" class="shop-link">
+                                         Quality Assurance
+                                        </a></li>
+                                    <li><a href="#" class="shop-link">
+                                         Product Design
+                                    </a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="footer-info">
+                                <ul class="footer-info-border">
+                                    <li><a href="#">
+                                            <h4>HOW WE WORK</h4>
+                                        </a></li>
+                                    <li><a href="#" class="shop-link">
+                                            Our Work Process
+                                        </a></li>
+                                    <li><a href="#" class="shop-link">
+                                            WorkShops
+                                        </a></li>
+                                    
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="footer-info">
+                                <ul>
+                                    <li><a href="#">
+                                            <h4>ACCOUNT INFO</h4>
+                                        </a></li>
+                                    <li><a href="#" class="shop-link">
+                                            My Account
+                                        </a></li>
+                                    <li><a href="#" class="shop-link">
+                                           Track Your Order
+                                        </a></li>
+                                    <li><a href="#" class="shop-link">
+                                             Product Services
+                                        </a></li>
+                                   
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-end">
+                            <p>@Copyright by CodeRed . All Rights Reserve Powered by<a href="#"><span>
+                                emythmakers.com</span></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
 
 
 
     <!-- footer-start -->
-    <footer>
+    <!-- <footer>
         <div class="footer-area">
             <div class="container">
                 <div class="row">
@@ -917,7 +1206,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- footer-end -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
